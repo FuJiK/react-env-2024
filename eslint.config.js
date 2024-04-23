@@ -2,9 +2,21 @@ import globals from "globals";
 import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
+// import { settings } from "./.eslintrc.cjs"; //こうはCommonJSでは書かない
+import react from "@vitejs/plugin-react-swc";
 // import react from "eslint-plugin-react";
+import pkg from './.eslintrc.cjs';
+const { settings } = pkg;
+//commonJSはこの書き方でImport
 
 export default [
+  {
+  settings: {
+    react: {
+      version: 'detect', // Reactバージョンを自動的に検出
+    },
+  },
+  },
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
@@ -15,6 +27,9 @@ export default [
 // import pluginJs from "@eslint/js";
 // import tseslint from "@typescript-eslint/eslint-plugin";
 // import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
+// import react from "@vitejs/plugin-react-swc";
+// import pkg from './.eslintrc.cjs';
+// const { settings } = pkg;
 
 // export default {
 //   settings: {
