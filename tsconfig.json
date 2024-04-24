@@ -20,18 +20,18 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-   /* import alias*/
-   "baseUrl": "./",
-   "paths": {
+    /* import alias*/
+    "baseUrl": "./",
+    "paths": {
       "@/*": ["src/*"]
-   },
-   "types": ["vitest/globals"]
+    },
+    "types": ["vitest/globals"]
   },
   "include": [
     "src",
     "vitest-setup.ts"
     // "src/**/*",
-  // "typings/**/*"
-],
+    // "typings/**/*"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
