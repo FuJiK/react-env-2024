@@ -11,7 +11,8 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -42,5 +43,11 @@
     "vite": "^5.2.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^1.5.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }
