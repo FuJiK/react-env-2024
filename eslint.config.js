@@ -63,3 +63,34 @@ export default [
 //     'react/jsx-no-target-blank': ['error', { enforceDynamicLinks: 'always' }],
 //   },
 // };
+// import React, { settings } from './.eslintrc.cjs';
+ 
+// export default {
+//   settings: {
+//     react: {
+//       version: 'detect', // Reactバージョンを自動的に検出
+//     },
+//   },
+//   parser: '@typescript-eslint/parser',  // TypeScriptのパーサーを設定
+//   parserOptions: {
+//     ecmaVersion: 2020,  // ECMAScriptのバージョンを指定
+//     sourceType: 'module',  // モジュールタイプを指定
+//     ecmaFeatures: {
+//       jsx: true,  // JSXの解析を有効にする
+//     },
+//   },
+//   extends: [
+//     'eslint:recommended',
+//     'plugin:@typescript-eslint/recommended',  // TypeScript用の推奨設定を適用
+//     'plugin:react/recommended',  // React用の推奨設定を適用
+//     'plugin:react-hooks/recommended',  // React Hooks用の推奨設定を適用
+//   ],
+//   plugins: [
+//     'react',
+//     '@typescript-eslint',
+//   ],
+//   rules: {
+//     'react/react-in-jsx-scope': 'off',
+//     'react/jsx-no-target-blank': ['error', { enforceDynamicLinks: 'always' }],
+//   },
+// };
