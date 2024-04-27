@@ -8,6 +8,8 @@ on:
 permissions:
   contents: read
   pages: write
+  id-token: write  # この行を追加してIDトークンの書き込み権限を有効化
+
 
 concurrency:
   group: "pages"
