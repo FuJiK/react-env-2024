@@ -28,7 +28,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: github-pages  # アーティファクト名を「github-pages」に統一
+          name: github-pages
           path: ./docs
 
   deploy:
@@ -39,8 +39,8 @@ jobs:
     steps:
       - uses: actions/download-artifact@v3
         with:
-          name: github-pages  # アーティファクト名を一致させる
-          path: ./docs  # 正確なディレクトリへのダウンロードパスを指定
+          name: github-pages
+          path: ./  # アーティファクトをワークスペースのルートにダウンロードする
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
