@@ -29,7 +29,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: site
+          name: react-env-2024
           path: ./docs
 
   deploy:
@@ -40,7 +40,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v3
         with:
-          name: site
+          name: react-env-2024/
           path: ./docs
       - name: Deploy to GitHub Pages
         id: deployment
