@@ -28,7 +28,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: react-env-2024  # アーティファクト名を`github-pages`に変更
+          name: react-env-2024  
           path: ./docs
 
   deploy:
@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v3
         with:
-          name: github-pages  # アーティファクト名を一致させる
+          name: react-env-2024  # アーティファクト名を一致させる
           path: ./  # ワークスペースのルートにダウンロード
       - name: Deploy to GitHub Pages
         id: deployment
