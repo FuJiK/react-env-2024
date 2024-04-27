@@ -40,7 +40,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v3
         with:
-          name: react-env-2024/
+          name: react-env-2024
           path: ./docs
       - name: Deploy to GitHub Pages
         id: deployment
