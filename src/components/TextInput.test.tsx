@@ -1,6 +1,6 @@
 import userEvent from '@testing-library/user-event';
 // import { render } from "react-dom";
-import React, { render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 // Which one
 import TextInput from './TextInput';
 

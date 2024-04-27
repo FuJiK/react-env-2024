@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 // import { useState } from "react";
 //このエラーは、TextInput.tsx ファイルで React がインポートされているものの、
 // ファイル内で実際に使用されていないために発生しています。
