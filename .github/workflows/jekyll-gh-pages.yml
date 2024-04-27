@@ -40,7 +40,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: github-pages
-          path: ./docs  # アーティファクトをワークスペースのルートにダウンロードする
+          path: ./  # アーティファクトをワークスペースのルートにダウンロードする
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
